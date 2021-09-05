@@ -1,0 +1,80 @@
+.ani-moveup {
+  animation: moveup 1s ease-in-out forwards;
+}
+.ani-movedown {
+  animation: movedown 1s ease-in-out forwards;
+}
+.ani-moveindown {
+  animation: moveindown 1s ease-in-out forwards;
+}
+.ani-moveinup {
+  animation: moveinup 1s ease-in-out forwards;
+}
+.ani-quotes_box {
+  animation: quotes_box 1s ease-in-out;
+}
+.ani-image_box {
+  animation: image_box 1s ease-in-out;
+}
+
+@keyframes moveup {
+  from {
+    transform: none;
+    opacity: 1;
+  }
+  to {
+    transform: translateY(-50px);
+    opacity: 0;
+  }
+}
+@keyframes movedown {
+  from {
+    transform: none;
+    opacity: 1;
+  }
+  to {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+}
+@keyframes moveindown {
+  from {
+    transform: translateY(-50px);
+    opacity: 0;
+  }
+  to {
+    transform: none;
+    opacity: 1;
+  }
+}
+@keyframes moveinup {
+  from {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  to {
+    transform: none;
+    opacity: 1;
+  }
+}
+
+@keyframes quotes_box {
+  from {
+    transform: translateY(50px) rotate(5deg);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0px) rotate(5deg);
+    opacity: 1;
+  }
+}
+@keyframes image_box {
+  from {
+    transform: translateY(50px) rotate(-5deg);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0px) rotate(-5deg);
+    opacity: 1;
+  }
+}

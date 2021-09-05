@@ -1,3 +1,183 @@
+@import url("https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Do+Hyeon&display=swap");
+
+@import "animation.css";
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  font-family: "Do Hyeon", sans-serif;
+}
+
+#clock,
+#greeting,
+#title__initialscreen {
+  font-family: "Black Han Sans", sans-serif;
+  font-size: 50px;
+}
+#clock {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  margin: 0;
+  font-size: 40px;
+}
+#greeting {
+  margin-top: 10px;
+  font-size: 35px;
+}
+
+#login-form {
+  border-bottom: 0.5px solid;
+}
+
+#input-name {
+  height: 20px;
+  width: 250px;
+  border: none;
+  text-align: center;
+  outline: none;
+  font-size: 20px;
+}
+#submit-btn {
+  height: 30px;
+  width: 70px;
+  border: none;
+  border-radius: 10px;
+  margin-bottom: 5px;
+  background-color: rgba(0, 0, 0, 0.1);
+  font-size: 15px;
+}
+#submit-btn:hover {
+  cursor: pointer;
+}
+
+#weather {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+}
+.quote {
+  height: 150px;
+  width: 250px;
+  position: absolute;
+  right: 30px;
+  top: 150px;
+  background-color: rgba(253, 244, 195, 1);
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+  padding: 0px 10px 0px 10px;
+  transform: rotate(5deg);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.quote span {
+  margin: 5px;
+}
+.quote:hover {
+  transform: scale(1.2);
+}
+
+#todo-form {
+  margin-top: 10%;
+  border-bottom: 0.5px solid rgba(0, 0, 0, 0.2);
+}
+#todo-form input {
+  border: none;
+  margin-bottom: 5px;
+  font-size: 20px;
+  outline: none;
+  width: 300px;
+  text-align: center;
+}
+#todo-list {
+  list-style: none;
+  justify-content: space-between;
+  overflow: auto;
+}
+#todo-list li {
+  width: 250px;
+}
+#todo-list span {
+  font-size: 20px;
+  margin-left: 20px;
+}
+#todo-list button {
+  border: none;
+  background-color: white;
+}
+
+.background-box {
+  height: 80vh;
+  width: 90vw;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+  border: 5px solid rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  padding: 10px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.background-box__initialscreen {
+  justify-content: center;
+}
+
+.image {
+  height: 330px;
+  width: 320px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transform: rotate(-5deg);
+  position: absolute;
+  left: 35px;
+  bottom: 40px;
+}
+.image img {
+  margin-bottom: 7px;
+}
+.image span:nth-child(3) {
+  font-size: 20px;
+}
+.glue {
+  height: 50px;
+  width: 20px;
+  background-color: rgba(210, 180, 140, 0.7);
+  position: absolute;
+  top: -25px;
+  transform: rotate(5deg);
+}
+.glue_quote {
+  transform: rotate(10deg);
+}
+
+.image:hover {
+  transform: scale(1.2);
+}
+
+.image img {
+  width: 90%;
+  height: 70%;
+  object-fit: cover;
+  margin-top: 13px;
+}
+
+.graffiti {
+  position: absolute;
+  bottom: 50px;
+  right: 40px;
+  height: 150px;
+  width: 300px;
+  object-fit: cover;
+  transform: rotate(15deg);
+}
+
 .hidden {
   display: none;
 }

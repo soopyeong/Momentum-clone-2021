@@ -8,19 +8,37 @@
         <title>Momentum</title>
     </head>
     <body>
-        <form class="hidden" id="login-form">
-            <input required maxlength="15" type="text" placeholder="What is your name?" />
-            <input type="submit" value="Log In" />
-        </form>
-        <h2 id="clock">00:00:00</h2>
-        <h1 id="greeting" class="hidden"></h1>
-        <div id="quote">
-            <span></span>
-            <span></span>
+        <div class="background-box background-box__initialscreen">
+            <h1 id="title__initialscreen">What is your name?</h1>
+            <form class="hidden" id="login-form">
+                <input required maxlength="15" type="text" placeholder="What is your name?" id="input-name"/>
+                <input type="submit" value="Log In" id="submit-btn"/>
+            </form>
+            <h2 id="clock" class="hidden">00:00:00</h2>
+            <h1 id="greeting" class="hidden"></h1>
+            <div id="weather" class="hidden">
+                <span></span>
+                <span></span>
+            </div>
+            <form id="todo-form" class="hidden">
+                <input type="text" placeholder="What are you going to do?" required />
+            </form>
+            <ul id="todo-list"></ul>
+            <div class="quote hidden">
+                <div class="glue glue_quote"></div>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="image hidden">
+                <div class="glue"></div>
+            </div>
+            <img src="https://thumb.ac-illust.com/t/03/03ee6c5ed3b5e87710f5bdd761552000_t.jpeg" class="graffiti hidden" />
         </div>
         <script src="js/greetings.js"></script>
         <script src="js/clock.js"></script>
         <script src="js/quotes.js"></script>
         <script src="js/background.js"></script>
+        <script src="js/todo.js"></script>
+        <script src="js/weather.js"></script>
     </body>
 </html>
